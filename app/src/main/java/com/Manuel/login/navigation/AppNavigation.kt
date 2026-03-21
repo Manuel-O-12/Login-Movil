@@ -7,6 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import com.Manuel.login.screens.ContactsScreen
 import com.Manuel.login.screens.LoginScreen
 import com.Manuel.login.screens.SingUpScreen
 import com.Manuel.login.screens.WelcomeScreen
@@ -29,6 +30,10 @@ fun AppNavigation(){
 
         composable("Login") {
             LoginScreen(navController = navController)
+        }
+
+        composable("Contacts") {
+            ContactsScreen(navController = navController)
         }
     }
 }

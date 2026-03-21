@@ -140,6 +140,28 @@ fun WelcomeScreen(navController: NavController){
                     )
                 }
 
+                Spacer(modifier = Modifier.height(16.dp))
+
+                Button(
+                    onClick = { navController.navigate("Contacts") },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(50.dp)
+                        .clip(RoundedCornerShape(25.dp)),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFF4CAF50), // Verde
+                        contentColor = Color.White
+                    ),
+                    shape = RoundedCornerShape(25.dp)
+                ) {
+                    Text(
+                        text = "Contacts",
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
+
+
                 Spacer(modifier = Modifier.height(24.dp))
 
                 Text(
